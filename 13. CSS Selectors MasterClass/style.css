@@ -1,0 +1,42 @@
+/* div{
+    background-color: red;
+} */
+
+/* class selector */
+.red {
+  background-color: red;
+}
+
+/* id selector */
+#green {
+    background-color: green;
+}
+
+/* child selector */
+div > p{
+    color: blue;
+    background-color: yellow;
+}
+
+/* universal selector */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Pseudo Selectors */
+a:visited{
+    color: yellow;
+}
+
+a:link{
+    color: green;
+}
+
+a:active{
+    background-color: red;
+}
+
+a:hover{
+    background-color: aqua;
+}
