@@ -1,0 +1,13 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+nav ul li{
+    list-style: devanagari;
+    list-style-type: "😂";
+    border: 2px solid hotpink;
+    list-style-position: inside;
+    background-color: aqua;
+}
