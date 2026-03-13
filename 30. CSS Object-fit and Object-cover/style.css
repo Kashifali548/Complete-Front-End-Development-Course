@@ -1,0 +1,15 @@
+.container{
+    height: 488px;
+    width: 466px;
+    border: 3px solid rebeccapurple;
+    background-color: azure;
+}
+
+img{
+    height: 488px;
+    width: 466px;
+    object-fit: cover;
+    /* object-fit: contain; */
+    /* object-position: top left; */
+    /* object-position: top right; */
+}
