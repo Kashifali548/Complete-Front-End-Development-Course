@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+    <style>
+        .container{
+            background-color: rgb(115, 189, 253);
+            padding: 14px;
+            margin: 14px;
+        }
+
+        .childContainer{
+            background-color: rgb(16, 96, 165);
+            padding: 14px;
+            margin: 14px;
+        }
+
+        .child{
+            background-color: rgb(179, 231, 178);
+            padding: 14px;
+            margin: 14px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="childContainer">
+            <div class="child">
+                Hey! i am a child.
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.querySelector(".child").addEventListener("click", (e)=> {
+            e.stopPropagation()
+            alert("Child is clicked")
+        })
+
+         document.querySelector(".childContainer").addEventListener("click", (e)=> {
+            e.stopPropagation()
+            alert("ChildContainer is clicked")
+        })
+
+         document.querySelector(".container").addEventListener("click", (e)=> {
+            alert("Container is clicked")
+        })
+    </script>
+</body>
+</html>
